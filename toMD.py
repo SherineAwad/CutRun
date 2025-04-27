@@ -1,5 +1,4 @@
 import os
-import re
 
 # Path where your .txt files are stored
 input_folder = '/nfs/turbo/umms-thahoang/sherine/mouseCutRun/'  # Replace with your folder path
@@ -22,22 +21,10 @@ with open(output_md_file, 'w') as md_file:
         
         # Open the .txt file and read its content
         with open(os.path.join(input_folder, txt_file), 'r') as file:
-            lines = file.readlines()
+            content = file.read()
         
-        # Start code block
-        md_file.write("```\n")
-        
-        for line in lines:
-            # Look for the line containing 'mapped' with percentage
-            match = re.search(r'(\d+\.\d+)%', line)
-            if match:
-                percent = match.group(1)
-                # Replace the percentage with bold version
-                line = line.replace(f"{percent}%", f"**{percent}%**")
-            md_file.write(line)
-        
-        # End code block
-        md_file.write("```\n\n")
+        # Write the content into the markdown file
+        md_file.write(f"```\n{content}\n```\n\n")
 
 print(f"Successfully created {output_md_file}")
 
