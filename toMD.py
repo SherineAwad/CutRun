@@ -7,7 +7,7 @@ input_folder = '/nfs/turbo/umms-thahoang/sherine/mouseCutRun/'  # Replace with y
 txt_files = [f for f in os.listdir(input_folder) if f.endswith('_stats.txt')]
 
 # Output .md file name
-output_md_file = 'combined_stats.md'
+output_md_file = 'flagstats.md'
 
 # Open the output .md file in write mode
 with open(output_md_file, 'w') as md_file:
