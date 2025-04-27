@@ -18,15 +18,7 @@ rule all:
             expand("{sample}.bam", sample = reSamples), 
             expand("{sample}.sorted.bam", sample =reSamples),
             expand("{sample}.sorted.rmDup.bam", sample =reSamples),
-            #expand("{sample}.bigwig", sample = reSamples),
-            #expand("macs/{sample}_summits.bed", sample = FINAL),
-            #expand("macs/{sample}_peaks.narrowPeak", sample = FINAL),
-            #expand("Motif_{sample}/seq.autonorm.tsv", sample =FINAL),           
-            #expand("{sample}.annotatednarrowpeaks", sample = FINAL),
-            #expand("{sample}.annotatednarrowpeaks.stats", sample = FINAL),
-            #expand("{sample}.annotatednarrowpeaks.bed", sample = FINAL),
-            #expand("{sample}.bed", sample = TREAT),
-            #expand("{sample}.annotatednarrowpeaks.fasta", sample = TREAT)
+            expand("{sample}.bigwig", sample = reSamples),
 
 rule trim: 
        input: 
