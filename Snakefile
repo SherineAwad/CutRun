@@ -19,7 +19,9 @@ rule all:
             expand("{sample}.sorted.bam", sample =reSamples),
             expand("{sample}.sorted.rmDup.bam", sample =reSamples),
             expand("{sample}.bigwig", sample = reSamples),
-
+            expand("macs2/{sample}_peaks.narrowPeak", sample=reSamples), 
+	    expand("macs2/{sample}_summits.bed", sample=reSamples),
+            expand("Motif_{sample}/seq.autonorm.tsv", sample=reSamples),
 rule trim: 
        input: 
            r1 = "{sample}_R1.fastq.gz",
@@ -114,19 +116,19 @@ rule bamCoverage:
           bamCoverage -b {input[0]} -p {params.num_processors}  --normalizeUsing RPGC --effectiveGenomeSize {params.genome_size} --binSize {params.binsize} -o {output} 
           """ 
 
-rule macs_bed: 
-      input: 
-         "{sample}.sorted.rmDup.bam"
-      params: 
-         "{sample}", 
-         genome_size = config['Genome_Size'] 
-      output: 
-          "macs/{sample}_summits.bed",
-          "macs/{sample}_peaks.narrowPeak", 
-      shell: 
-           """
-           bash macs2.sh 
-           """
+
+rule macs2: 
+    input:
+        lambda wildcards: f"{wildcards.sample}.bam"
+    output:
+        "macs2/{sample}_peaks.narrowPeak"
+    params:
+        outdir = "macs2",
+        genome = "mm"
+    shell:
+        """
+        macs2 callpeak -t {input} -f BAMPE -g {params.genome} --outdir {params.outdir} -n {wildcards.sample}
+        """
 
 
 rule annotateNarrowPeaks: 
@@ -146,7 +148,7 @@ rule annotateNarrowPeaks:
 
 rule findMotifs:
       input:
-          "macs/{sample}_summits.bed"
+          "macs2/{sample}_summits.bed"
       params:
           genome = config['GENOME'],
           output_dir = "Motif_{sample}"
