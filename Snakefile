@@ -105,7 +105,7 @@ rule index:
 
 rule macs2: 
     input:
-        lambda wildcards: f"{wildcards.sample}.bam"
+        lambda wildcards: f"{wildcards.sample}.sorted.rmDup.bam"
     output:
         "macs2/{sample}_peaks.narrowPeak"
     params:

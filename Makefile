@@ -18,3 +18,12 @@ fastq_screen_all:
 	done
 
 
+
+macs_broad/ZF14_Rb_H3K27me3_broad_peaks.broadPeak:
+
+	macs2 callpeak -t ZF14_Rb_H3K27me3.sorted.rmDup.bam -f BAMPE -g mm --outdir macs_broad --broad  -n ZF14_Rb_H3K27me3_broad
+
+
+MotifB_ZF14_Rb_H3K27me3/knownResults.html: 
+	findMotifsGenome.pl macs_broad/ZF14_Rb_H3K27me3_broad_peaks.broadPeak ../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa MotifB_ZF14_Rb_H3K27me3 -size 200 -mask
+
