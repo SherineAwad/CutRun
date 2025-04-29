@@ -101,20 +101,6 @@ rule index:
           """
           samtools index {input} 
           """ 
-rule bamCoverage: 
-       input: 
-        "{sample}.sorted.rmDup.bam",
-        "{sample}.sorted.rmDup.bam.bai" 
-       output: 
-        "{sample}.bigwig" 
-       params: 
-         genome_size = config['Genome_Size'], 
-         binsize = config['BINSIZE'], 
-         num_processors = config['Num_Processors'] 
-       shell: 
-          """ 
-          bamCoverage -b {input[0]} -p {params.num_processors}  --normalizeUsing RPGC --effectiveGenomeSize {params.genome_size} --binSize {params.binsize} -o {output} 
-          """ 
 
 
 rule macs2: 
@@ -160,31 +146,3 @@ rule findMotifs:
          """
 
 
-rule toBed: 
-    input: 
-        "{sample}.annotatednarrowpeaks"
-    output: 
-        "{sample}.annotatednarrowpeaks.bed"
-    shell: 
-        "cut -f 1-6 {input} > {output}" 
-
-
-rule adjustBed: 
-     input: 
-         "{sample}.annotatednarrowpeaks.bed"
-     output: 
-         "{sample}.bed" 
-     shell: 
-        "sed '1d' {input} | cut -f2- > {output} " 
-     
-rule getFasta: 
-    input: 
-       "{sample}.bed"
-    params: 
-        genome = config['GENOME'], 
-    output:
-        "{sample}.annotatednarrowpeaks.fasta" 
-    shell: 
-        """
-         bedtools getfasta -fi {params.genome} -bed {input} -fo {output}
-        """
