@@ -1,5 +1,5 @@
 
-## MACS2 Peak Counts per Sample
+# MACS2 Peak Counts per Sample
   
 |Sample          |% Alignment | Peak Count |
 |----------------|------------|------------|
@@ -16,6 +16,11 @@
 |ZF9_Rb_IgG      |5.12%       | 91         |
 
 
+# Link to Motif files and contamination Check 
+
+[View detailed files on Google Drive](https://drive.google.com/drive/folders/1RSEIvA7mLNbu3EgEdU3CwpSwyhg36FHC?usp=sharing)
+
+*Note: You will need to log in with your UMich credentials to access the files.*
 
 
 # Detailed Sample Statistics via flagstats 
