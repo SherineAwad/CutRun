@@ -19,9 +19,9 @@ rule all:
             expand("{sample}.sorted.bam", sample =reSamples),
             expand("{sample}.sorted.rmDup.bam", sample =reSamples),
             expand("{sample}.bigwig", sample = reSamples),
-            expand("macs2/{sample}_peaks.narrowPeak", sample=reSamples), 
-	    expand("macs2/{sample}_summits.bed", sample=reSamples),
-            expand("Motif_{sample}/seq.autonorm.tsv", sample=reSamples),
+            expand("macs2_nolambda/{sample}_peaks.narrowPeak", sample=reSamples), 
+	    expand("macs2_nolambda/{sample}_summits.bed", sample=reSamples),
+            expand("MotifNL_{sample}/seq.autonorm.tsv", sample=reSamples),
 rule trim: 
        input: 
            r1 = "{sample}_R1.fastq.gz",
@@ -102,18 +102,19 @@ rule index:
           samtools index {input} 
           """ 
 
-
+#Note --nolambda 
 rule macs2: 
     input:
         lambda wildcards: f"{wildcards.sample}.sorted.rmDup.bam"
     output:
-        "macs2/{sample}_peaks.narrowPeak"
+        "macs2_nolambda/{sample}_peaks.narrowPeak", 
+        "macs2_nolambda/{sample}_summits.bed"
     params:
-        outdir = "macs2",
+        outdir = "macs2_nolambda",
         genome = "mm"
     shell:
         """
-        macs2 callpeak -t {input} -f BAMPE -g {params.genome} --outdir {params.outdir} -n {wildcards.sample}
+        macs2 callpeak -t {input} -f BAMPE -g {params.genome} --nolambda  --outdir {params.outdir} -n {wildcards.sample}
         """
 
 
@@ -134,12 +135,12 @@ rule annotateNarrowPeaks:
 
 rule findMotifs:
       input:
-          "macs2/{sample}_summits.bed"
+          "macs2_nolambda/{sample}_summits.bed"
       params:
           genome = config['GENOME'],
-          output_dir = "Motif_{sample}"
+          output_dir = "MotifNL_{sample}"
       output:
-          "Motif_{sample}/seq.autonorm.tsv"
+          "MotifNL_{sample}/seq.autonorm.tsv"
       shell:
          """
           findMotifsGenome.pl {input} {params.genome} {params.output_dir} -size 200 -mask
