@@ -102,6 +102,21 @@ rule index:
           samtools index {input} 
           """ 
 
+rule bamCoverage:
+       input:
+        "{sample}.sorted.rmDup.bam",
+        "{sample}.sorted.rmDup.bam.bai"
+       output:
+        "{sample}.bigwig"
+       params:
+         genome_size = config['Genome_Size'],
+         binsize = config['BINSIZE'],
+         num_processors = config['Num_Processors']
+       shell:
+          """
+          bamCoverage -b {input[0]} -p {params.num_processors}  --normalizeUsing RPGC --effectiveGenomeSize {params.genome_size} --binSize {params.binsize} -o {output}
+          """
+
 #Note --nolambda 
 rule macs2: 
     input:
