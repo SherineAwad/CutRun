@@ -17,9 +17,8 @@
 
 # Link to Motif files and contamination Check 
 
-[View detailed files on Google Drive](https://drive.google.com/drive/folders/1RSEIvA7mLNbu3EgEdU3CwpSwyhg36FHC?usp=sharing)
+[View detailed files on Google Drive](https://drive.google.com/drive/folders/1aCyRv_zKHHdxo4pR_snLl349c4zP3NOM?usp=sharing)
 
-*Note: You will need to log in with your UMich credentials to access the files.*
 
 
 # Detailed Sample Statistics via flagstats 
