@@ -10,10 +10,12 @@ flagstats: $(STATS)
 
 
 
-FILES = 13186-ZF-9_R1.fastq.gz 13186-ZF-11_R1.fastq.gz 13186-ZF-12_R1.fastq.gz 13186-ZF-13_R1.fastq.gz 13186-ZF-14_R1.fastq.gz 13186-ZF-15_R1.fastq.gz 13186-ZF-16_R1.fastq.gz 13186-ZF-17_R1.fastq.gz 13186-ZF-27_R1.fastq.gz 13186-ZF-28_R1.fastq.gz
+FILES1 = 13186-ZF-9_R1.fastq.gz 13186-ZF-11_R1.fastq.gz 13186-ZF-12_R1.fastq.gz 13186-ZF-13_R1.fastq.gz 13186-ZF-14_R1.fastq.gz 13186-ZF-15_R1.fastq.gz 13186-ZF-16_R1.fastq.gz 13186-ZF-17_R1.fastq.gz 13186-ZF-27_R1.fastq.gz 13186-ZF-28_R1.fastq.gz
 
+
+FILES2 = 13186-ZF-29_R1.fastq.gz 13186-ZF-30_R1.fastq.gz 13186-ZF-31_R1.fastq.gz 13186-ZF-32_R1.fastq.gz 13186-ZF-33_R1.fastq.gz 13186-ZF-34_R1.fastq.gz 13186-ZF-18_R1.fastq.gz
 fastq_screen_all:
-	for file in $(FILES); do \
+	for file in $(FILES2); do \
 		perl ../tools/fastq_screen_v0.13.0/fastq_screen --conf ../tools/fastq_screen_v0.13.0/fastq_screen.conf $$file --aligner bowtie2; \
 	done
 
