@@ -240,3 +240,186 @@
 
 ```
 
+## ZF18_Nr2e3_stats  Statistics
+
+```
+
+36322438 + 0 in total (QC-passed reads + QC-failed reads)
+36322438 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+26455430 + 0 mapped (72.83% : N/A)
+26455430 + 0 primary mapped (72.83% : N/A)
+36322438 + 0 paired in sequencing
+18161219 + 0 read1
+18161219 + 0 read2
+26455430 + 0 properly paired (72.83% : N/A)
+26455430 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+
+## ZF29_Rb_otx2_stats Statistics 
+
+``` 
+23451770 + 0 in total (QC-passed reads + QC-failed reads)
+23451770 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+22466858 + 0 mapped (95.80% : N/A)
+22466858 + 0 primary mapped (95.80% : N/A)
+23451770 + 0 paired in sequencing
+11725885 + 0 read1
+11725885 + 0 read2
+22466858 + 0 properly paired (95.80% : N/A)
+22466858 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+
+##  ZF30_Rb_crx_stats  Statistics
+
+```
+
+34200826 + 0 in total (QC-passed reads + QC-failed reads)
+34200826 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+32002162 + 0 mapped (93.57% : N/A)
+32002162 + 0 primary mapped (93.57% : N/A)
+34200826 + 0 paired in sequencing
+17100413 + 0 read1
+17100413 + 0 read2
+32002162 + 0 properly paired (93.57% : N/A)
+32002162 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+## ZF31_Nrl_stats Statistics 
+
+``` 
+33629112 + 0 in total (QC-passed reads + QC-failed reads)
+33629112 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+31672562 + 0 mapped (94.18% : N/A)
+31672562 + 0 primary mapped (94.18% : N/A)
+33629112 + 0 paired in sequencing
+16814556 + 0 read1
+16814556 + 0 read2
+31672562 + 0 properly paired (94.18% : N/A)
+31672562 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+
+## ZF32_Insm1_stats Statistics 
+
+``` 
+33629112 + 0 in total (QC-passed reads + QC-failed reads)
+33629112 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+31672562 + 0 mapped (94.18% : N/A)
+31672562 + 0 primary mapped (94.18% : N/A)
+33629112 + 0 paired in sequencing
+16814556 + 0 read1
+16814556 + 0 read2
+31672562 + 0 properly paired (94.18% : N/A)
+31672562 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+## ZF32_Insm1_stats Statistics 
+
+```
+34757348 + 0 in total (QC-passed reads + QC-failed reads)
+34757348 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+32221188 + 0 mapped (92.70% : N/A)
+32221188 + 0 primary mapped (92.70% : N/A)
+34757348 + 0 paired in sequencing
+17378674 + 0 read1
+17378674 + 0 read2
+32221188 + 0 properly paired (92.70% : N/A)
+32221188 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+
+## ZF33_Insm1_stats Statistics 
+
+```
+29281604 + 0 in total (QC-passed reads + QC-failed reads)
+29281604 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+27740258 + 0 mapped (94.74% : N/A)
+27740258 + 0 primary mapped (94.74% : N/A)
+29281604 + 0 paired in sequencing
+14640802 + 0 read1
+14640802 + 0 read2
+27740258 + 0 properly paired (94.74% : N/A)
+27740258 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
+
+## ZF34_Insm1_stats Statistics 
+
+```
+
+
+29917384 + 0 in total (QC-passed reads + QC-failed reads)
+29917384 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+28203072 + 0 mapped (94.27% : N/A)
+28203072 + 0 primary mapped (94.27% : N/A)
+29917384 + 0 paired in sequencing
+14958692 + 0 read1
+14958692 + 0 read2
+28203072 + 0 properly paired (94.27% : N/A)
+28203072 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+``` 
