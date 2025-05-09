@@ -16,3 +16,4 @@ GTF: "../REFERENCES/Mus_musculus/Ensembl/GRCm38/Annotation/Genes/genes.gtf"
 INDEX: "../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/Bowtie2Index/genome" 
 Num_Processors: 4
 BINSIZE: 1
+Genome_Size: 2652783500 #GRCm38

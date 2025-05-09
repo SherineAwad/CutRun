@@ -11,8 +11,8 @@ rule all:
          input:
             #Prepare samples
             #================
-            #expand("galore/{sample}_R1_val_1.fq.gz", sample=samples),
-            #expand("galore/{sample}_R2_val_2.fq.gz", sample=samples),
+            expand("galore/{sample}_R1_val_1.fq.gz", sample=samples),
+            expand("galore/{sample}_R2_val_2.fq.gz", sample=samples),
             expand("{sample}.sam", sample = samples),
             expand("{sample}.sam", sample = reSamples),
             expand("{sample}.bam", sample = reSamples), 
@@ -22,6 +22,10 @@ rule all:
             expand("macs2_nolambda/{sample}_peaks.narrowPeak", sample=reSamples), 
 	    expand("macs2_nolambda/{sample}_summits.bed", sample=reSamples),
             expand("MotifNL_{sample}/seq.autonorm.tsv", sample=reSamples),
+            expand("macs2/{sample}_peaks.narrowPeak", sample=reSamples),
+            expand("macs2/{sample}_summits.bed", sample=reSamples),
+            expand("Motif_{sample}/seq.autonorm.tsv", sample=reSamples)
+
 rule trim: 
        input: 
            r1 = "{sample}_R1.fastq.gz",
@@ -118,7 +122,7 @@ rule bamCoverage:
           """
 
 #Note --nolambda 
-rule macs2: 
+rule macs2_nolambda: 
     input:
         lambda wildcards: f"{wildcards.sample}.sorted.rmDup.bam"
     output:
@@ -132,23 +136,7 @@ rule macs2:
         macs2 callpeak -t {input} -f BAMPE -g {params.genome} --nolambda  --outdir {params.outdir} -n {wildcards.sample}
         """
 
-
-rule annotateNarrowPeaks: 
-      input: 
-         "macs/{sample}_peaks.narrowPeak" 
-      params: 
-           genome= config['GENOME'], 
-           gtf = config['GTF']  
-      output: 
-         "{sample}.annotatednarrowpeaks", 
-         "{sample}.annotatednarrowpeaks.stats"
-      shell: 
-          """
-          annotatePeaks.pl {input} {params.genome} -gtf {params.gtf}   -annStats {output[1]}  > {output[0]}    
-          """ 
-
-
-rule findMotifs:
+rule findMotifs_nolambda:
       input:
           "macs2_nolambda/{sample}_summits.bed"
       params:
@@ -161,4 +149,47 @@ rule findMotifs:
           findMotifsGenome.pl {input} {params.genome} {params.output_dir} -size 200 -mask
          """
 
+
+rule macs2_lambda:
+    input:
+        lambda wildcards: f"{wildcards.sample}.sorted.rmDup.bam"
+    output:
+        "macs2/{sample}_peaks.narrowPeak",         
+        "macs2/{sample}_summits.bed"
+    params:
+        outdir = "macs2",
+        genome = "mm"
+    shell:
+        """
+        macs2 callpeak -t {input} -f BAMPE -g {params.genome} --outdir {params.outdir} -n {wildcards.sample}
+        """
+
+
+rule findMotifs_lambda:
+      input:
+          "macs2/{sample}_summits.bed"
+      params:
+          genome = config['GENOME'],
+          output_dir = "Motif_{sample}"
+      output:
+          "Motif_{sample}/seq.autonorm.tsv"
+      shell:
+         """
+          findMotifsGenome.pl {input} {params.genome} {params.output_dir} -size 200 -mask
+         """
+
+
+rule annotateNarrowPeaks:
+      input:
+         "macs/{sample}_peaks.narrowPeak"
+      params:
+           genome= config['GENOME'],
+           gtf = config['GTF']
+      output:
+         "{sample}.annotatednarrowpeaks",
+         "{sample}.annotatednarrowpeaks.stats"
+      shell:
+          """
+          annotatePeaks.pl {input} {params.genome} -gtf {params.gtf}   -annStats {output[1]}  > {output[0]}
+          """
 
