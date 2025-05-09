@@ -332,29 +332,6 @@
 
 ``` 
 
-
-## ZF32_Insm1_stats Statistics 
-
-``` 
-33629112 + 0 in total (QC-passed reads + QC-failed reads)
-33629112 + 0 primary
-0 + 0 secondary
-0 + 0 supplementary
-0 + 0 duplicates
-0 + 0 primary duplicates
-31672562 + 0 mapped (94.18% : N/A)
-31672562 + 0 primary mapped (94.18% : N/A)
-33629112 + 0 paired in sequencing
-16814556 + 0 read1
-16814556 + 0 read2
-31672562 + 0 properly paired (94.18% : N/A)
-31672562 + 0 with itself and mate mapped
-0 + 0 singletons (0.00% : N/A)
-0 + 0 with mate mapped to a different chr
-0 + 0 with mate mapped to a different chr (mapQ>=5)
-
-``` 
-
 ## ZF32_Insm1_stats Statistics 
 
 ```
