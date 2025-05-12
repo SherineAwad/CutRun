@@ -408,3 +408,180 @@
 0 + 0 with mate mapped to a different chr (mapQ>=5)
 
 ``` 
+# Sample Statistics
+
+## ZF19_Rb_IgG_stats Statistics
+
+```
+59228078 + 0 in total (QC-passed reads + QC-failed reads)
+59228078 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+494356 + 0 mapped (0.83% : N/A)
+494356 + 0 primary mapped (0.83% : N/A)
+59228078 + 0 paired in sequencing
+29614039 + 0 read1
+29614039 + 0 read2
+494356 + 0 properly paired (0.83% : N/A)
+494356 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF22_Rb_Crx_stats Statistics
+
+```
+71001664 + 0 in total (QC-passed reads + QC-failed reads)
+71001664 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+547412 + 0 mapped (0.77% : N/A)
+547412 + 0 primary mapped (0.77% : N/A)
+71001664 + 0 paired in sequencing
+35500832 + 0 read1
+35500832 + 0 read2
+547412 + 0 properly paired (0.77% : N/A)
+547412 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF26_Insm1_stats Statistics
+
+```
+57154524 + 0 in total (QC-passed reads + QC-failed reads)
+57154524 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+546092 + 0 mapped (0.96% : N/A)
+546092 + 0 primary mapped (0.96% : N/A)
+57154524 + 0 paired in sequencing
+28577262 + 0 read1
+28577262 + 0 read2
+546092 + 0 properly paired (0.96% : N/A)
+546092 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF20_Rb_H3K27me3_stats Statistics
+
+```
+61244308 + 0 in total (QC-passed reads + QC-failed reads)
+61244308 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+549444 + 0 mapped (0.90% : N/A)
+549444 + 0 primary mapped (0.90% : N/A)
+61244308 + 0 paired in sequencing
+30622154 + 0 read1
+30622154 + 0 read2
+549444 + 0 properly paired (0.90% : N/A)
+549444 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF23_Rb_Pax6_stats Statistics
+
+```
+62726254 + 0 in total (QC-passed reads + QC-failed reads)
+62726254 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+723186 + 0 mapped (1.15% : N/A)
+723186 + 0 primary mapped (1.15% : N/A)
+62726254 + 0 paired in sequencing
+31363127 + 0 read1
+31363127 + 0 read2
+723186 + 0 properly paired (1.15% : N/A)
+723186 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF21_Rb_Otx2_stats Statistics
+
+```
+70798026 + 0 in total (QC-passed reads + QC-failed reads)
+70798026 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+516062 + 0 mapped (0.73% : N/A)
+516062 + 0 primary mapped (0.73% : N/A)
+70798026 + 0 paired in sequencing
+35399013 + 0 read1
+35399013 + 0 read2
+516062 + 0 properly paired (0.73% : N/A)
+516062 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF25_Rb_Isl1_stats Statistics
+
+```
+62826814 + 0 in total (QC-passed reads + QC-failed reads)
+62826814 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+634314 + 0 mapped (1.01% : N/A)
+634314 + 0 primary mapped (1.01% : N/A)
+62826814 + 0 paired in sequencing
+31413407 + 0 read1
+31413407 + 0 read2
+634314 + 0 properly paired (1.01% : N/A)
+634314 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
+
+## ZF24_Rb_Atoh7_stats Statistics
+
+```
+62157658 + 0 in total (QC-passed reads + QC-failed reads)
+62157658 + 0 primary
+0 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+504708 + 0 mapped (0.81% : N/A)
+504708 + 0 primary mapped (0.81% : N/A)
+62157658 + 0 paired in sequencing
+31078829 + 0 read1
+31078829 + 0 read2
+504708 + 0 properly paired (0.81% : N/A)
+504708 + 0 with itself and mate mapped
+0 + 0 singletons (0.00% : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+```
