@@ -18,4 +18,12 @@ ln -f 13186-ZF-32.sam ZF32_Insm1.sam
 ln -f 13186-ZF-33.sam ZF33_Insm1.sam
 ln -f 13186-ZF-34.sam ZF34_Insm1.sam 
 ln -f 13186-ZF-18.sam ZF18_Nr2e3.sam 
+ln -f 13186-ZF-19.sam ZF19_Rb_IgG.sam
+ln -f 13186-ZF-20.sam ZF20_Rb_H3K27me3.sam
+ln -f 13186-ZF-21.sam ZF21_Rb_Otx2.sam
+ln -f 13186-ZF-22.sam ZF22_Rb_Crx.sam
+ln -f 13186-ZF-23.sam ZF23_Rb_Pax6.sam
+ln -f 13186-ZF-24.sam ZF24_Rb_Atoh7.sam
+ln -f 13186-ZF-25.sam ZF25_Rb_Isl1.sam
+ln -f 13186-ZF-26.sam ZF26_Insm1.sam
 
