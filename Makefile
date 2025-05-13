@@ -17,9 +17,8 @@ FILES2 = 13186-ZF-29_R1.fastq.gz 13186-ZF-30_R1.fastq.gz 13186-ZF-31_R1.fastq.gz
 
 FILES3 = 13186-ZF-19_R1.fastq.gz 13186-ZF-20_R1.fastq.gz	13186-ZF-21_R1.fastq.gz 13186-ZF-22_R1.fastq.gz 13186-ZF-23_R1.fastq.gz 13186-ZF-24_R1.fastq.gz 13186-ZF-25_R1.fastq.gz 13186-ZF-26_R1.fastq.gz
 
-FILES4 = 13186-ZF-19_R1.fastq.gz 
 fastq_screen_all:
-	for file in $(FILES4); do \
+	for file in $(FILES3); do \
 		perl ../tools/fastq_screen_v0.13.0/fastq_screen --conf ../tools/fastq_screen_v0.13.0/fastq_screen.conf $$file --aligner bowtie2; \
 	done
 
