@@ -54,6 +54,8 @@ Motif_ZF17_Rbpj4:
 
 #-f 0.5: Requires at least 50% of a region in -a to overlap a region in -b.
 #-r: Requires that the reciprocal condition is met — i.e., both regions must overlap each other by at least 50%.
+#https://macs3-project.github.io/MACS/docs/narrowPeak.html#
+#https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
 shared_peaks_ZF11_ZF13.bed: 
 	bedtools intersect -a macs2/ZF11_Nfiabx_peaks.narrowPeak -b macs2/ZF13_Nfiabx_peaks.narrowPeak -wa -u > shared_peaks_ZF11_ZF13.bed
 
