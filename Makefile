@@ -52,6 +52,8 @@ Motif_ZF17_Rbpj3:
 Motif_ZF17_Rbpj4:
 	findMotifsGenome.pl macs2/ZF17_Rbpj_peaks.narrowPeak ../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa Motif_ZF17_Rbpj4  -find /nfs/turbo/umms-thahoang/sherine/miniconda/envs/archr/share/homer/motifs/rbpj1.motif > rbpj_hits.txt
 
+#-f 0.5: Requires at least 50% of a region in -a to overlap a region in -b.
+#-r: Requires that the reciprocal condition is met — i.e., both regions must overlap each other by at least 50%.
 shared_peaks_ZF11_ZF13.bed: 
 	bedtools intersect -a macs2/ZF11_Nfiabx_peaks.narrowPeak -b macs2/ZF13_Nfiabx_peaks.narrowPeak -wa -u > shared_peaks_ZF11_ZF13.bed
 
