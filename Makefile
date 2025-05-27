@@ -67,10 +67,10 @@ ZF17_Rbpj.bed:
 ZF11_ZF13.bed:
 	bedtools intersect -a macs2/ZF11_Nfiabx_peaks.narrowPeak -b macs2/ZF13_Nfiabx_peaks.narrowPeak  -f 0.5 -r > ZF11_ZF13.bed 
 
+Motif_ZF11_ZF13_shared_peaks/knownResults.html:
+	findMotifsGenome.pl ZF11_ZF13.bed ../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa  Motif_ZF11_ZF13_shared_peaks -size 200 -mask
 
 ZF11_13_peaks_annotated_nearby_genes.csv:
 	Rscript nearbyGenes.R
 
 
-Motif_ZF11_ZF13_shared_peaks/knownResults.html:
-	findMotifsGenome.pl ZF11_ZF13.bed ../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa  Motif_ZF11_ZF13_shared_peaks -size 200 -mask
