@@ -63,6 +63,45 @@ This table helps interpret which genes each peak might be regulating or associat
 
 ---
 
+## 📏 Coordinate System Difference: BED vs ChIPseeker
+
+When comparing peak coordinates between your original BED file and the output from ChIPseeker, you may notice a **1 base pair shift** in the start position. This is expected and is due to differences in the coordinate systems used by each format.
+
+### 🔄 Coordinate System Comparison
+
+| Format                  | Start Coordinate     | End Coordinate       | System Type         |
+|-------------------------|----------------------|---------------------|---------------------|
+| **BED**                 | 0-based (inclusive)  | 1-based (exclusive) | 0-based             |
+| **ChIPseeker / GRanges**| 1-based (inclusive)  | 1-based (inclusive) | 1-based             |
+
+### 📌 What This Means
+
+A peak defined in a BED file as:
+
+chr1 5019276 5019799
+
+
+means:
+
+- The **start** at `5019276` (0-based) becomes `5019277` when converted to 1-based coordinates.
+- The **end** at `5019799` is exclusive in BED but becomes inclusive in 1-based formats.
+
+So, ChIPseeker correctly represents this region as:
+
+
+
+Both formats refer to the **same DNA segment**, just using different conventions.
+
+### ✅ Summary Table
+
+| Format      | Start     | End       | Represents (1-based view)     |
+|-------------|-----------|-----------|-------------------------------|
+| **BED**     | 5019276   | 5019799   | 5019277–5019799 (inclusive)   |
+| **ChIPseeker** | 5019277 | 5019799   | 5019277–5019799 (inclusive)   |
+
+This is not a bug — it's a standard and necessary conversion to ensure compatibility with Bioconductor tools like ChIPseeker, which use 1-based inclusive coordinates.
+
+---
 
 
 **Generated with:**  
