@@ -61,6 +61,12 @@ The annotated peak file produced by **ChIPseeker** contains a mix of original pe
 
 This table helps interpret which genes each peak might be regulating or associated with, especially in promoter or enhancer regions.
 
+**Note:**  
+The columns `V4` to `V10` in the annotation file correspond to fields from a MACS2 narrowPeak file.  
+You can find the detailed explanation of these columns here:  
+[MACS2 narrowPeak format documentation](https://macs3-project.github.io/MACS/docs/narrowPeak.html#)
+
+
 ---
 
 ## 📏 Coordinate System Difference: BED vs ChIPseeker
