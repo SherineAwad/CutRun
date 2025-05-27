@@ -34,6 +34,11 @@
 [View detailed files on Google Drive](https://drive.google.com/drive/folders/1aCyRv_zKHHdxo4pR_snLl349c4zP3NOM?usp=sharing)
 
 
+🔎 To jump to nearby genes results:  
+👉 [View detailed nearby gene annotation explanation for ZF11_ZF13 here](./nearbyGenes.md)
+
+
+
 
 # Detailed Sample Statistics via flagstats 
 
