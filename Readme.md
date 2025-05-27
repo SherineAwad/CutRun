@@ -1,4 +1,3 @@
-
 # MACS2 Peak Counts per Sample
   
 |Sample          |% Alignment |N. Reads|N. Reads Aligned| Narrow Peak Count |Broad Peak Count|Narrow Peak nolambda |
@@ -565,6 +564,11 @@
 
 ```
 
+---
+
+## 📘 More Details
+
+👉 [View detailed nearby gene annotation explanation for ZF11_ZF13 here](./nearbyGenes.md)
 
 
 
