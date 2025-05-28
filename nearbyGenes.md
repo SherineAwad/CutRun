@@ -33,6 +33,89 @@ You can [download the full annotated peak list as a CSV file](./ZF11_13_peaks_an
 
 ---
 
+
+
+
+
+
+
+
+
+# 🔬 ZF27_neurog2 Nearby Genes
+  
+This project shows peak annotation results for the `ZF27_neurog2` Cut&Run dataset using [ChIPseeker](https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html). Peaks were annotated to the nearest genes based on the mm10 mouse genome.
+
+--- 
+
+## 📈 Peak Annotation Summary
+
+### 🧠 Genomic Feature Distribution
+
+![Annotation Pie Chart](ZF27_peak_annotation_piechart.png)
+*Distribution of peaks across genomic features (e.g., Promoter, Exon, Intergenic).*
+
+---
+
+### 📍 Distance to TSS
+
+![Distance to TSS](ZF27_peak_distance_to_TSS.png)
+*Distribution of peak distances from the transcription start sites (TSS).*
+
+---
+
+### 🔗 Annotation Category Overlap (UpSet Plot)
+
+![UpSet Plot](ZF27_peak_upset_plot.png)
+*Overlap of peak annotations across multiple genomic categories.*
+
+---
+
+## 📄 Full Annotated Peaks Table
+
+You can [download the full annotated peak list as a CSV file](./ZF27_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
+
+---
+
+
+# 🔬 ZF17_Rbpj Nearby Genes
+
+This project shows peak annotation results for the `ZF17_Rbpj` Cut&Run dataset using [ChIPseeker](https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html). Peaks were annotated to the nearest genes based on the mm10 mouse genome.
+
+--- 
+
+## 📈 Peak Annotation Summary
+
+### 🧠 Genomic Feature Distribution
+
+![Annotation Pie Chart](ZF17_peak_annotation_piechart.png)
+*Distribution of peaks across genomic features (e.g., Promoter, Exon, Intergenic).*
+
+---
+
+### 📍 Distance to TSS
+
+![Distance to TSS](ZF17_peak_distance_to_TSS.png)
+*Distribution of peak distances from the transcription start sites (TSS).*
+
+---
+
+### 🔗 Annotation Category Overlap (UpSet Plot)
+
+![UpSet Plot](ZF17_peak_upset_plot.png)
+*Overlap of peak annotations across multiple genomic categories.*
+
+---
+
+## 📄 Full Annotated Peaks Table
+
+You can [download the full annotated peak list as a CSV file](./ZF17_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
+
+---
+
+
+
+
+
 ## 🧬 Annotation File Header Explained
 
 The annotated peak file produced by **ChIPseeker** contains a mix of original peak coordinates and gene annotation metadata.
