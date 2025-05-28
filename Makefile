@@ -53,12 +53,8 @@ Motif_ZF17_Rbpj4:
 	findMotifsGenome.pl macs2/ZF17_Rbpj_peaks.narrowPeak ../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa Motif_ZF17_Rbpj4  -find /nfs/turbo/umms-thahoang/sherine/miniconda/envs/archr/share/homer/motifs/rbpj1.motif > rbpj_hits.txt
 
 
-#Trying SEACR
-ZF17_Rbpj.bedgraph:
-	bigWigToBedGraph ZF17_Rbpj.bigwig ZF17_Rbpj.bedgraph
-
-ZF17_Rbpj.bed:
-	bash SEACR_1.3.sh ZF17_Rbpj.bedgraph 0.01 non stringent ZF17_Rbpj
+XX:
+	Genrich -t sample.bam -o sample_peaks.narrowPeak -j -y -v
 
 #-f 0.5: Requires at least 50% of a region in -a to overlap a region in -b.
 #-r: Requires that the reciprocal condition is met — i.e., both regions must overlap each other by at least 50%.
