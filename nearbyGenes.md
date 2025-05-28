@@ -29,14 +29,9 @@ This project shows peak annotation results for the `ZF11_ZF13.bed` Cut&Run datas
 
 ## 📄 Full Annotated Peaks Table
 
-You can [download the full annotated peak list as a CSV file](./ZF11_13_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
+You can [download the full annotated peak list of ZF11_13 as a CSV file](./ZF11_13_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
 
 ---
-
-
-
-
-
 
 
 
@@ -72,7 +67,7 @@ This project shows peak annotation results for the `ZF27_neurog2` Cut&Run datase
 
 ## 📄 Full Annotated Peaks Table
 
-You can [download the full annotated peak list as a CSV file](./ZF27_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
+You can [download the full annotated peak list of ZF27 as a CSV file](./ZF27_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
 
 ---
 
@@ -108,7 +103,7 @@ This project shows peak annotation results for the `ZF17_Rbpj` Cut&Run dataset u
 
 ## 📄 Full Annotated Peaks Table
 
-You can [download the full annotated peak list as a CSV file](./ZF17_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
+You can [download the full annotated peak list of ZF17 as a CSV file](./ZF17_peaks_annotated_nearby_genes.csv), which includes nearest genes, distances to TSS, and gene symbols.
 
 ---
 
