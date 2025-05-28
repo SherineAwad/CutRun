@@ -53,8 +53,6 @@ Motif_ZF17_Rbpj4:
 	findMotifsGenome.pl macs2/ZF17_Rbpj_peaks.narrowPeak ../REFERENCES/Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa Motif_ZF17_Rbpj4  -find /nfs/turbo/umms-thahoang/sherine/miniconda/envs/archr/share/homer/motifs/rbpj1.motif > rbpj_hits.txt
 
 
-XX:
-	Genrich -t sample.bam -o sample_peaks.narrowPeak -j -y -v
 
 #-f 0.5: Requires at least 50% of a region in -a to overlap a region in -b.
 #-r: Requires that the reciprocal condition is met — i.e., both regions must overlap each other by at least 50%.
@@ -68,5 +66,14 @@ Motif_ZF11_ZF13_shared_peaks/knownResults.html:
 
 ZF11_13_peaks_annotated_nearby_genes.csv:
 	Rscript nearbyGenes.R
+
+
+##Histograms 
+ZF29_Otx2.png:
+	python peaks_hist.py macs2/ZF13_Nfiabx_peaks.narrowPeak ZF13_Nfiabx
+	python peaks_hist.py macs2/ZF17_Rbpj_peaks.narrowPeak ZF17_Rbpj
+	python peaks_hist.py macs2/ZF21_Rb_Otx2_peaks.narrowPeak ZF21_Otx2
+	python peaks_hist.py macs2/ZF29_Rb_otx2_peaks.narrowPeak ZF29_Otx2
+
 
 

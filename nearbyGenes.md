@@ -1,3 +1,19 @@
+# Distribution of Peak Sizes
+
+### ZF13_Nfiabx  
+![ZF13_Nfiabx](ZF13_Nfiabx.png)
+
+### ZF17_Rbpj  
+![ZF17_Rbpj](ZF17_Rbpj.png)
+
+### ZF21_Otx2  
+![ZF21_Otx2](ZF21_Otx2.png)
+
+### ZF29_Otx2  
+![ZF29_Otx2](ZF29_Otx2.png)
+
+
+
 # 🔬 ZF11_13 Nearby Genes
 
 This project shows peak annotation results for the `ZF11_ZF13.bed` Cut&Run dataset using [ChIPseeker](https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html). Peaks were annotated to the nearest genes based on the mm10 mouse genome.
