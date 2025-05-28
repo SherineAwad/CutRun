@@ -1,5 +1,8 @@
 # Distribution of Peak Sizes
 
+
+We filtered peaks with size > 5000 to avoid skewed plots 
+
 ### ZF13_Nfiabx  
 ![ZF13_Nfiabx](ZF13_Nfiabx.png)
 
